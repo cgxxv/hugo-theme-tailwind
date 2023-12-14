@@ -5,9 +5,11 @@
     </a>
   </div>
   <div class="flex-1"></div>
+  {{ if .Params.showMenu }}
   <div class="flex-none">
     {{ partial "menu.html" }}
   </div>
+  {{ end }}
   {{ if (gt .Site.Home.AllTranslations.Len 1) }}
   <div class="flex-none">
     <div class="h-full static">
